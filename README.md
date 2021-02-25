@@ -1,6 +1,12 @@
 # ESP-OTA-MQTT-Framework
 Simple Framwork for the ESP8266 to use MQTT and OTA (Over-The-Air flasing)
 
+## Required Librarys
+- ArduinoOTA
+- ArduinoJson
+- ESP8266WiFi
+- ESP8266mDNS
+
 ## Things you might want to change
 The following variables should be changed:
 - _chipName_: Name of Chip, that will be the clientID in MQTT and the hostname for OTA
@@ -28,3 +34,6 @@ The mainloop is the place for your main code. Depending on what this Framework s
 ## Using Over-The-Air updates
 This is an extremly great feature with ESPs, as you can place them at any inaccessible location you want and still reprogramm them (as long as they still have good WiFi connection and power...).
 You can read more on: https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html
+
+## Using JSON
+The _ArduinoJson_ Library is included as it make it pretty easy to work with JSON-Data send over mqtt to/by node-red. You can find out how to use ist on: https://arduinojson.org/
