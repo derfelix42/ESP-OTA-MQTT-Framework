@@ -79,8 +79,8 @@ void setup() {
   Serial.println("\nStarting up...");
 
   // Setup Pins
-  pinMode(led, OUTPUT);
-  analogWrite(led, 0);
+  // pinMode(led, OUTPUT);
+  // analogWrite(led, 0);
 
   // Connenct to Wifi
   Serial.print("Connecting to ");
